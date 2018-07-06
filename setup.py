@@ -11,11 +11,7 @@ DESCRIPTION = descr
 # to have things how I'd like, but not throw complaints when people are trying
 # to install the package and they don't have pypandoc or the README in the
 # right place.
-try:
-    import pypandoc
-    LONG_DESCRIPTION = pypandoc.convert('README.md', 'rst')
-except (IOError, ImportError):
-    LONG_DESCRIPTION = ''
+
 MAINTAINER = 'Maximilian Nickel',
 MAINTAINER_EMAIL = 'mnick@mit.edu'
 URL = 'http://github.com/mnick/scikit-kge'
